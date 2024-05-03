@@ -130,20 +130,20 @@ const MENU_ITEMS: MenuItemTypes[] = [
     ],
   },
 
-  {
-    key: "apps-calendar",
-    label: "Calendar",
-    isTitle: false,
-    icon: "calendar",
-    url: "/apps/calendar",
-  },
   // {
-  //   key: "apps-chat",
-  //   label: "Chat",
+  //   key: "apps-calendar",
+  //   label: "Calendar",
   //   isTitle: false,
-  //   icon: "message-square",
-  //   url: "/apps/chat",
+  //   icon: "calendar",
+  //   url: "/apps/calendar",
   // },
+  {
+    key: "apps-chat",
+    label: "Chat",
+    isTitle: false,
+    icon: "message-square",
+    url: "/apps/chat",
+  },
   // {
   //   key: "apps-email",
   //   label: "Email",
