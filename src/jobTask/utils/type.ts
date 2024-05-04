@@ -10,11 +10,12 @@ export interface Records {
   Barcode: number;
   Client_Code: number;
   Client_Name: string;
+  statusText?: string;
   Subtotal: string;
   Discount: string;
   Total: string;
   Paid: string;
-  Due: string;
+  Due?: string;
   Date: string;
   Status: any;
   Action: any;

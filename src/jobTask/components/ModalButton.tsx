@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-export default function ModalCenter({
+export default function ModalButton({
   icon,
   text,
   modalHeading,
@@ -19,10 +19,10 @@ export default function ModalCenter({
   const handleShow = () => setShow(true);
   return (
     <>
-      <div onClick={handleShow} className="cursor-pointer">
+      <Button onClick={handleShow} className="cursor-pointer">
         {icon}
         {text}
-      </div>
+      </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

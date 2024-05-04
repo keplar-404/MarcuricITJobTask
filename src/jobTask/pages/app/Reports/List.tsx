@@ -25,28 +25,23 @@ const columns = [
     sort: true,
   },
   {
-    Header: "Subtotal",
+    Header: "Gender",
     accessor: "Subtotal",
     sort: true,
   },
   {
-    Header: "Discount",
+    Header: "Age",
     accessor: "Discount",
     sort: true,
   },
   {
-    Header: "Total",
+    Header: "Phone",
     accessor: "Total",
     sort: true,
   },
   {
-    Header: "Paid",
+    Header: "Tests",
     accessor: "Paid",
-    sort: true,
-  },
-  {
-    Header: "Due",
-    accessor: "Due",
     sort: true,
   },
   {
@@ -107,9 +102,9 @@ const List = ({
                 }}
               >
                 <h4 className="header-title mb-3">List</h4>
-                <Button variant="primary" onClick={() => setFormCreate(true)}>
+                {/* <Button variant="primary" onClick={() => setFormCreate(true)}>
                   + create
-                </Button>
+                </Button> */}
               </div>
 
               <Table

@@ -1,4 +1,4 @@
-import { Button, Card, Form } from "react-bootstrap";
+import { Card, Form } from "react-bootstrap";
 import { FormInput } from "../../../../components";
 import TestLists from "./TestLists";
 import CultureList from "./CultureList";
@@ -95,10 +95,10 @@ export default function CreateForm() {
           </div>
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
+              display: "flex",
+              flexDirection: "column",
               width: "100%",
-              gap: "20px",
+              gap: "10px",
             }}
           >
             <div style={{ marginBottom: "10px" }}>
@@ -167,46 +167,61 @@ export default function CreateForm() {
               </Form.Select>
             </div>
             <FormInput label={"Address"} type="text" name="address" />
+
+            <div style={{ marginBottom: "10px" }}>
+              <p
+                style={{
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                  marginBottom: "5px",
+                }}
+              >
+                Doctor
+              </p>
+
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "10px",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: " repeat(3, 1fr)",
+                    gap: "10px",
+                  }}
+                >
+                  <Form.Select
+                    style={{
+                      margin: "5px 0px 20px 0px",
+                      gridRow: "1/3",
+                      width: "100%",
+                    }}
+                    defaultValue={"Doctor"}
+                    className="row-span-3"
+                  >
+                    <option defaultChecked disabled>
+                      Select Doctor
+                    </option>
+
+                    <option>Dr. John Doe</option>
+                    <option>Dr. Jane Smith</option>
+                    <option>Dr. Robert Johnson</option>
+                    <option>Dr. Elizabeth Wilson</option>
+                    <option>Dr. David Lee</option>
+                  </Form.Select>
+                </div>
+                <ModalButton
+                  text="Not listed ?"
+                  modalBody={<FormComponet2 />}
+                />
+              </div>
+            </div>
           </div>
-
-          <p
-            style={{
-              fontSize: "14px",
-              fontWeight: "bold",
-              marginBottom: "5px",
-            }}
-          >
-            Doctor
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: " repeat(3, 1fr)",
-              gap: "10px",
-            }}
-          >
-            <Form.Select
-              style={{
-                margin: "5px 0px 20px 0px",
-                gridRow: "1/3",
-                width: "100%",
-              }}
-              defaultValue={"Doctor"}
-              className="row-span-3"
-            >
-              <option defaultChecked disabled>
-                Select Doctor
-              </option>
-
-              <option>Dr. John Doe</option>
-              <option>Dr. Jane Smith</option>
-              <option>Dr. Robert Johnson</option>
-              <option>Dr. Elizabeth Wilson</option>
-              <option>Dr. David Lee</option>
-            </Form.Select>
-          </div>
-
-          <ModalButton text="Not listed ?" modalBody={<FormComponet2 />} />
         </Card.Body>
       </Card>
 
@@ -279,23 +294,6 @@ export default function CreateForm() {
               name="Due"
               defaultValue={0}
             />
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "10px",
-              justifyContent: "space-between",
-              width: "100%",
-              marginTop: "20px",
-            }}
-          >
-            <Button variant="primary" style={{ width: "100%" }}>
-              Save
-            </Button>
-            <Button variant="danger" style={{ width: "100%" }}>
-              Cancel
-            </Button>
           </div>
         </Card.Body>
       </Card>

@@ -1,12 +1,12 @@
 import Layout from "../../../components/Layout";
 import Filter from "../../../components/Filter";
-import ReportList from "./ReportsList";
+
+import ConditionalRendaringListOrForm from "./ConditionalRendaringListOrForm";
 
 export default function index() {
   return (
-    <Layout label="Reports" path="reports">
-      <Filter />
-      <ReportList />
+    <Layout label="Invoice" path="invoice">
+      <ConditionalRendaringListOrForm />
     </Layout>
   );
 }

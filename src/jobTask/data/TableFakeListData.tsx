@@ -16,6 +16,7 @@ export const records: Records[] = [
     Paid: "0 USD",
     Due: "73 USD",
     Date: "24-04-2024 14:34",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -41,6 +42,7 @@ export const records: Records[] = [
     Paid: "20 USD",
     Due: "25 USD",
     Date: "25-04-2024 10:00",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -66,6 +68,7 @@ export const records: Records[] = [
     Paid: "90 USD",
     Due: "0 USD",
     Date: "26-04-2024 09:15",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -91,6 +94,7 @@ export const records: Records[] = [
     Paid: "50 USD",
     Due: "55 USD",
     Date: "27-04-2024 13:45",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -116,6 +120,7 @@ export const records: Records[] = [
     Paid: "30 USD",
     Due: "42 USD",
     Date: "28-04-2024 16:20",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -141,6 +146,7 @@ export const records: Records[] = [
     Paid: "100 USD",
     Due: "30 USD",
     Date: "29-04-2024 11:55",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -166,6 +172,7 @@ export const records: Records[] = [
     Paid: "175 USD",
     Due: "0 USD",
     Date: "30-04-2024 08:30",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -191,6 +198,7 @@ export const records: Records[] = [
     Paid: "50 USD",
     Due: "33 USD",
     Date: "01-05-2024 12:10",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -216,6 +224,7 @@ export const records: Records[] = [
     Paid: "90 USD",
     Due: "10 USD",
     Date: "02-05-2024 15:45",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -241,6 +250,7 @@ export const records: Records[] = [
     Paid: "100 USD",
     Due: "15 USD",
     Date: "03-05-2024 09:20",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -266,6 +276,7 @@ export const records: Records[] = [
     Paid: "120 USD",
     Due: "20 USD",
     Date: "04-05-2024 14:00",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -291,6 +302,7 @@ export const records: Records[] = [
     Paid: "65 USD",
     Due: "0 USD",
     Date: "05-05-2024 08:55",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -316,6 +328,7 @@ export const records: Records[] = [
     Paid: "100 USD",
     Due: "65 USD",
     Date: "06-05-2024 12:45",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -341,6 +354,7 @@ export const records: Records[] = [
     Paid: "50 USD",
     Due: "35 USD",
     Date: "07-05-2024 17:30",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -366,6 +380,7 @@ export const records: Records[] = [
     Paid: "180 USD",
     Due: "0 USD",
     Date: "08-05-2024 11:20",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -391,6 +406,7 @@ export const records: Records[] = [
     Paid: "100 USD",
     Due: "5 USD",
     Date: "09-05-2024 09:00",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -416,6 +432,7 @@ export const records: Records[] = [
     Paid: "120 USD",
     Due: "10 USD",
     Date: "10-05-2024 14:45",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -441,6 +458,7 @@ export const records: Records[] = [
     Paid: "160 USD",
     Due: "0 USD",
     Date: "11-05-2024 09:30",
+    statusText: "Pending",
     Status: (
       <FeatherIcons
         icon={"slash"}
@@ -466,6 +484,7 @@ export const records: Records[] = [
     Paid: "90 USD",
     Due: "5 USD",
     Date: "12-05-2024 13:15",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -491,6 +510,7 @@ export const records: Records[] = [
     Paid: "175 USD",
     Due: "0 USD",
     Date: "13-05-2024 08:00",
+    statusText: "Done",
     Status: (
       <FeatherIcons
         icon={"check-circle"}
@@ -581,28 +601,24 @@ export const tests: Tests[] = [
   },
 ];
 
-export const reports: Report[] = [
+export const reports: Records[] = [
   {
     id: 1,
     year: 2028,
     Barcode: 655508514108,
     Client_Code: 1603835870,
     Client_Name: "david alex",
-    Gender: "Male",
-    Age: "25",
-    Phone: "1234567890",
-    Tests: "Test 1, Test 2",
+    Subtotal: "Male",
+    Discount: "34",
+    Total: "+880255852",
+    Paid: "Ettp",
+   
     Date: "24-04-2024 14:34",
-    Done: (
+    statusText: "Pending",
+    Status: (
       <FeatherIcons
         icon={"slash"}
         className={classNames("icon-sm", "icon-dual-error")}
-      />
-    ),
-    Signed: (
-      <FeatherIcons
-        icon={"check"}
-        className={classNames("icon-sm", "icon-dual-success")}
       />
     ),
     Action: (
@@ -617,22 +633,17 @@ export const reports: Report[] = [
     year: 2029,
     Barcode: 655508514109,
     Client_Code: 1603835871,
-    Client_Name: "john doe",
-    Gender: "Male",
-    Age: "24",
-    Phone: "1234567890",
-    Tests: "Test 1, Test 2",
-    Date: "24-04-2024 14:34",
-    Done: (
+    Client_Name: "john smith",
+    Subtotal: "Male",
+    Discount: "25",
+    Total: "+2552",
+    Paid: "CVpt",
+    Date: "25-04-2024 10:00",
+    statusText: "Done",
+    Status: (
       <FeatherIcons
-        icon={"check"}
+        icon={"check-circle"}
         className={classNames("icon-sm", "icon-dual-success")}
-      />
-    ),
-    Signed: (
-      <FeatherIcons
-        icon={"slash"}
-        className={classNames("icon-sm", "icon-dual-error")}
       />
     ),
     Action: (
@@ -648,21 +659,16 @@ export const reports: Report[] = [
     Barcode: 655508514110,
     Client_Code: 1603835872,
     Client_Name: "alice johnson",
-    Gender: "Male",
-    Age: "55",
-    Phone: "1234567890",
-    Tests: "Test 1, Test 2",
-    Date: "24-04-2024 14:34",
-    Done: (
+    Subtotal: "Female",
+    Discount: "45",
+    Total: "+2552",
+    Paid: "CVpt",
+    Date: "26-04-2024 09:15",
+    statusText: "Done",
+    Status: (
       <FeatherIcons
-        icon={"check"}
+        icon={"check-circle"}
         className={classNames("icon-sm", "icon-dual-success")}
-      />
-    ),
-    Signed: (
-      <FeatherIcons
-        icon={"slash"}
-        className={classNames("icon-sm", "icon-dual-error")}
       />
     ),
     Action: (
@@ -674,22 +680,17 @@ export const reports: Report[] = [
   },
   {
     id: 4,
-    year: 2028,
-    Barcode: 655508514108,
-    Client_Code: 1603835870,
-    Client_Name: "david alex",
-    Gender: "Male",
-    Age: "75",
-    Phone: "1234567890",
-    Tests: "Test 1, Test 2",
-    Date: "24-04-2024 14:34",
-    Done: (
-      <FeatherIcons
-        icon={"check"}
-        className={classNames("icon-sm", "icon-dual-success")}
-      />
-    ),
-    Signed: (
+    year: 2026,
+    Barcode: 655508514111,
+    Client_Code: 1603835873,
+    Client_Name: "emily brown",
+    Subtotal: "Male",
+    Discount: "25",
+    Total: "+2552265",
+    Paid: "CVpt",
+    Date: "27-04-2024 13:45",
+    statusText: "Pending",
+    Status: (
       <FeatherIcons
         icon={"slash"}
         className={classNames("icon-sm", "icon-dual-error")}
@@ -702,96 +703,7 @@ export const reports: Report[] = [
       />
     ),
   },
-  {
-    id: 5,
-    year: 2029,
-    Barcode: 655508514109,
-    Client_Code: 1603835871,
-    Client_Name: "john doe",
-    Gender: "Male",
-    Age: "25",
-    Phone: "1234567890",
-    Tests: "Test 1, Test 2",
-    Date: "24-04-2024 14:34",
-    Done: (
-      <FeatherIcons
-        icon={"check"}
-        className={classNames("icon-sm", "icon-dual-success")}
-      />
-    ),
-    Signed: (
-      <FeatherIcons
-        icon={"slash"}
-        className={classNames("icon-sm", "icon-dual-error")}
-      />
-    ),
-    Action: (
-      <FeatherIcons
-        icon={"settings"}
-        className={classNames("icon-sm", "icon-dual-primary")}
-      />
-    ),
-  },
-  {
-    id: 6,
-    year: 2027,
-    Barcode: 655508514110,
-    Client_Code: 1603835872,
-    Client_Name: "alice johnson",
-    Gender: "Male",
-    Age: "45",
-    Phone: "1234567890",
-    Tests: "Test 1, Test 2",
-    Date: "24-04-2024 14:34",
-    Done: (
-      <FeatherIcons
-        icon={"check"}
-        className={classNames("icon-sm", "icon-dual-success")}
-      />
-    ),
-    Signed: (
-      <FeatherIcons
-        icon={"slash"}
-        className={classNames("icon-sm", "icon-dual-error")}
-      />
-    ),
-    Action: (
-      <FeatherIcons
-        icon={"settings"}
-        className={classNames("icon-sm", "icon-dual-primary")}
-      />
-    ),
-  },
-  {
-    id: 7,
-    year: 2028,
-    Barcode: 655508514108,
-    Client_Code: 1603835870,
-    Client_Name: "david alex",
-    Gender: "Male",
-    Age: "35",
-    Phone: "1234567890",
-    Tests: "Test 1, Test 2",
-    Date: "24-04-2024 14:34",
-    Done: (
-      <FeatherIcons
-        icon={"check"}
-        className={classNames("icon-sm", "icon-dual-success")}
-      />
-    ),
-    Signed: (
-      <FeatherIcons
-        icon={"slash"}
-        className={classNames("icon-sm", "icon-dual-error")}
-      />
-    ),
-    Action: (
-      <FeatherIcons
-        icon={"settings"}
-        className={classNames("icon-sm", "icon-dual-primary")}
-      />
-    ),
-  },
+  
 ];
 
 export const priceListTest: PriceList[] = [
